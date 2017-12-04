@@ -74,14 +74,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _structs = __webpack_require__(1);
+var _LinkedList = __webpack_require__(1);
 
-Object.keys(_structs).forEach(function (key) {
+Object.keys(_LinkedList).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {
-      return _structs[key];
+      return _LinkedList[key];
     }
   });
 });
@@ -96,37 +96,14 @@ Object.keys(_structs).forEach(function (key) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.LinkedList = LinkedList;
 
-var _LinkedList = __webpack_require__(2);
-
-Object.keys(_LinkedList).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _LinkedList[key];
-    }
-  });
-});
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.LinkedList = void 0;
-
-var LinkedList = function () {
+function LinkedList() {
   this.head = null;
   this.tail = null;
-}.bind(void 0);
+}
 
-exports.LinkedList = LinkedList;
+;
 
 /***/ })
 /******/ ]);

@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-	entry: './src/index.js',
+	entry: './src/structs/index.js',
 	output: {
 		path: path.resolve(__dirname, 'build'),
 		filename: 'bundle.js'
@@ -10,6 +10,7 @@ const config = {
 		rules: [
 			{
 				test: /\.js$/,
+				exclude: /(node_modules|bower_components)/,
 				use: {
 					loader: 'babel-loader',
 					options: {

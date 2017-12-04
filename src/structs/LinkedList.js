@@ -1,6 +1,6 @@
-const LinkedList = function() {
+function LinkedList() {
 	this.head = null;
 	this.tail = null;
-}.bind(this);
+};
 
-export { LinkedList };
+module.exports = LinkedList;
