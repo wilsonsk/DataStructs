@@ -1,4 +1,4 @@
-//const LinkedList = require('./structs/LinkedList');
+const LinkedList = require('./structs/LinkedList');
 
 module.exports = {
 	LinkedList: LinkedList.LinkedList,
