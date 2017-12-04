@@ -1,0 +1,29 @@
+Linked List:
+
+	- addToHead():
+		1. create new Node and initialize next to current head, and tail to null 
+		2. if a head points to a Node, then assign current head's prev to this new Node
+		3. else, (ie, Linked List is empty so...) assign current tail to point to new Node
+		4. re assign head to point to this new Node
+
+	- addToTail():
+		1. create new Node and initialize next to null, and tail to current tail
+		2. if a tail points to a Node, then assign current tail's next to this new Node
+		3. else, (ie, Linked List is empty so...) assign current head to point to new Node
+		4. re assign tail to point to this new Node
+
+	- removeHead():
+		1. if !head (ie, Linked List is empty so...) return null
+		2. else, save current head's value (for returning upon completion)
+		3. and, re assign head to point to current head's next (because we are removing current head)
+		4. if head now points to a Node (ie, Linked List is not empty), then set this head's prev to null
+		5. else (ie, Linked List is empty), re assign current tail to point to null
+		6. return value of released Node
+	
+	- removeTail():
+		1. if !tail (ie, Linked List is empty so...) return null
+		2. else, save current tail's value (for returning upon completion)
+		3. and, re assign tail to point to current tail's prev (because we are removing current tail)
+		4. if tail now points to a Node (ie, Linked List is not empty), then set this tail's next to null
+		5. else (ie, Linked List is empty), re assign current head to point to null
+		6. return value of released Node

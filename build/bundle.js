@@ -65,45 +65,13 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _LinkedList = __webpack_require__(1);
-
-Object.keys(_LinkedList).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _LinkedList[key];
-    }
-  });
-});
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.LinkedList = LinkedList;
-
-function LinkedList() {
-  this.head = null;
-  this.tail = null;
-}
-
-;
+//const LinkedList = require('./structs/LinkedList');
+module.exports = {
+  LinkedList: LinkedList.LinkedList,
+  Node: LinkedList.Node
+};
 
 /***/ })
 /******/ ]);
