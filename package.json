@@ -1,0 +1,24 @@
+{
+  "name": "datastructs",
+  "version": "1.0.0",
+  "description": "Micro library of reusable data structures",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsonsk/DataStructs.git"
+  },
+  "keywords": [
+    "reusable",
+    "data",
+    "structures"
+  ],
+  "author": "Sky Wilson <wilson.skylerm@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wilsonsk/DataStructs/issues"
+  },
+  "homepage": "https://github.com/wilsonsk/DataStructs#readme"
+}
