@@ -2,9 +2,9 @@
   "name": "datastructs",
   "version": "1.0.0",
   "description": "Micro library of reusable data structures",
-  "main": "src/index.js",
+  "main": "build/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/wilsonsk/DataStructs/issues"
   },
-  "homepage": "https://github.com/wilsonsk/DataStructs#readme"
+  "homepage": "https://github.com/wilsonsk/DataStructs#readme",
+  "dependencies": {
+    "@babel/core": "7.0.0-beta.34",
+    "@babel/preset-env": "7.0.0-beta.34",
+    "babel-loader": "8.0.0-beta.0",
+    "webpack": "3.9.1"
+  }
 }
