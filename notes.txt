@@ -27,3 +27,11 @@ Linked List:
 		4. if tail now points to a Node (ie, Linked List is not empty), then set this tail's next to null
 		5. else (ie, Linked List is empty), re assign current head to point to null
 		6. return value of released Node
+
+	- slowSearch(): O(n) search
+		1. set current Node to either head or tail
+		2. while, current Node is not null, 
+		3. check current Node's value 
+		4. if a match, return value
+		5. else, re assign current Node to point current Node's next (or prev if starting at tail)
+		6. if no matched value is found, then return null

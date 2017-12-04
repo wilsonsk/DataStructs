@@ -43,7 +43,31 @@ LinkedList.prototype.removeTail = function() {
 	return temp;
 }
 
+LinkedList.prototype.slowSearch = function(value) {
+	let currentNode = this.head;
+	while(currentNode) {
+		if (currentNode.value === value) return currentNode.value;
+			
+		currentNode = currentNode.next;
+	}
 
+	return null;
+}
+
+LinkedList.prototype.indexOf = function(value) {
+	var indices = [];
+	var index = 0;
+	var currentNode = this.head;
+
+	while(currentNode) {
+		if (currentNode.value === value) indices.push(index);
+
+		currentNode = currentNode.next;
+		index++;
+	}
+
+	return indices;
+}
 
 module.exports = {
 	LinkedList: LinkedList,
