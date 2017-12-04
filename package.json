@@ -1,6 +1,6 @@
 {
   "name": "datastructs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Micro library of reusable data structures",
   "main": "build/bundle.js",
   "scripts": {
